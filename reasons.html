@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Why You're Special ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Access Protection -->
+<script>
+
+if(
+!localStorage.getItem(
+"reasonsUnlocked"
+)
+){
+window.location.href =
+"letter.html";
+}
+
+</script>
+
+<!-- Floating Hearts -->
+<div class="hearts">
+    <span>❤️</span>
+    <span>💖</span>
+    <span>💕</span>
+    <span>💗</span>
+    <span>💞</span>
+</div>
+
+<!-- Music -->
+<audio id="bgMusic" loop>
+    <source src="music/sanamterikasam.mp3" type="audio/mpeg">
+</audio>
+
+<section class="reasons-page">
+
+    <div class="progress">
+        <div class="step-active">
+            🌹 Step 3 / 4
+        </div>
+    </div>
+
+    <h1 class="page-title">
+        Why You're Special ❤️
+    </h1>
+
+    <p class="page-subtitle">
+        Hover or tap the cards to reveal the reasons 💖
+    </p>
+
+    <div class="flip-grid">
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-front">❤️ Reason #1</div>
+                <div class="flip-back">Your Beautiful Smile 😊</div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-front">❤️ Reason #2</div>
+                <div class="flip-back">Your Caring Nature 💕</div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-front">❤️ Reason #3</div>
+                <div class="flip-back">Your Kind Heart 🌸</div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-front">❤️ Reason #4</div>
+                <div class="flip-back">Your Sweet Personality 🥰</div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-front">❤️ Reason #5</div>
+                <div class="flip-back">The Happiness You Bring ✨</div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-front">❤️ Reason #6</div>
+                <div class="flip-back">Your Positive Energy ☀️</div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-front">❤️ Reason #7</div>
+                <div class="flip-back">Your Cute Reactions 💖</div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-front">❤️ Reason #8</div>
+                <div class="flip-back">Because You're Simply You ❤️</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="bottom-buttons">
+
+        <a href="letter.html" class="btn">
+            ⬅ Back
+        </a>
+
+        <button
+        class="btn"
+        onclick="goToSurprise()">
+        Final Surprise 🎁 ➜
+        </button>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+<script>
+
+function goToSurprise(){
+
+localStorage.setItem(
+"surpriseUnlocked",
+"true"
+);
+
+document.body.classList.add(
+"fade-out"
+);
+
+setTimeout(()=>{
+
+window.location.href =
+"surprise.html";
+
+},800);
+
+}
+
+</script>
+
+</body>
+</html>

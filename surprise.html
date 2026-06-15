@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Final Surprise ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Access Protection -->
+<script>
+
+if(
+!localStorage.getItem(
+"surpriseUnlocked"
+)
+){
+window.location.href =
+"reasons.html";
+}
+
+</script>
+
+<!-- Floating Hearts -->
+<div class="hearts">
+    <span>❤️</span>
+    <span>💖</span>
+    <span>💕</span>
+    <span>💗</span>
+    <span>💞</span>
+</div>
+
+<!-- Music -->
+<audio id="bgMusic" loop>
+    <source src="music/sanamterikasam.mp3" type="audio/mpeg">
+</audio>
+
+<section class="surprise-page">
+
+    <div class="progress">
+
+        <div class="step-active">
+            🎁 Final Step
+        </div>
+
+    </div>
+
+    <div class="surprise-card">
+
+        <h1 class="birthday-title">
+            Happy Birthday Ziya ❤️
+        </h1>
+
+        <p class="birthday-message">
+
+            Thank you for taking this journey till the end.
+
+        </p>
+
+        <button
+        class="btn"
+        onclick="startFinalReveal()">
+
+            Open Your Surprise 🎁
+
+        </button>
+
+        <div
+        id="finalReveal"
+        class="final-reveal">
+
+            <h2 class="reveal-line">
+                🌹 You Are Special
+            </h2>
+
+            <h2 class="reveal-line">
+                💖 Very Special
+            </h2>
+
+            <h2 class="reveal-line">
+                ✨ More Than You Know
+            </h2>
+
+            <h2 class="reveal-line">
+                ❤️ And There Is One Last Thing...
+            </h2>
+
+            <h1 class="sahil-reveal">
+                SAHIL ❤️
+            </h1>
+
+            <p class="final-message">
+
+                Ye poori website maine sirf tumhare liye banayi hai.
+
+            </p>
+
+            <p class="final-message">
+
+                Tumhari smile, tumhari kindness,
+                aur tumhara hona hi tumhe special banata hai.
+
+            </p>
+
+            <p class="final-message">
+
+                Main bas itna chahta hoon ki
+                tum hamesha khush raho. 🌸
+
+            </p>
+
+            <p class="final-message">
+
+                Happy Birthday Once Again Ziya 🎂❤️
+
+            </p>
+
+        </div>
+
+        <div class="bottom-buttons">
+
+            <a
+            href="reasons.html"
+            class="btn">
+
+                ⬅ Back
+
+            </a>
+
+            <a
+            href="index.html"
+            class="btn">
+
+                🏠 Home
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+<script>
+
+function startFinalReveal(){
+
+    const reveal =
+    document.getElementById(
+    "finalReveal"
+    );
+
+    reveal.classList.add(
+    "show-reveal"
+    );
+
+    launchConfetti();
+
+    window.scrollTo({
+
+        top:document.body.scrollHeight,
+
+        behavior:"smooth"
+
+    });
+
+}
+
+</script>
+
+</body>
+</html>

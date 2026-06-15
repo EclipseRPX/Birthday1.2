@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>A Letter For Ziya ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Access Protection -->
+<script>
+
+if(
+!localStorage.getItem(
+"letterUnlocked"
+)
+){
+window.location.href =
+"gallery.html";
+}
+
+</script>
+
+<!-- Floating Hearts -->
+<div class="hearts">
+    <span>❤️</span>
+    <span>💖</span>
+    <span>💕</span>
+    <span>💗</span>
+    <span>💞</span>
+</div>
+
+<!-- Music -->
+<audio id="bgMusic" loop>
+    <source src="music/sanamterikasam.mp3" type="audio/mpeg">
+</audio>
+
+<section class="letter-page">
+
+    <div class="progress">
+
+        <div class="step-active">
+            💌 Step 2 / 4
+        </div>
+
+    </div>
+
+    <h1 class="page-title">
+        A Letter For You ❤️
+    </h1>
+
+    <p class="page-subtitle">
+        Some feelings are better written than spoken...
+    </p>
+
+    <!-- Envelope -->
+
+    <div class="envelope-wrapper">
+
+        <div
+        class="envelope"
+        onclick="openLetter()">
+
+            <div class="envelope-front">
+                💌
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Letter -->
+
+    <div
+    id="letter"
+    class="letter-content">
+
+        <h2>
+            Dear Ziya ❤️
+        </h2>
+
+        <p>
+            Aaj ka din mere liye bahut special hai,
+            kyunki aaj us ladki ka birthday hai
+            jo meri life ko aur bhi khoobsurat bana deti hai.
+        </p>
+
+        <p>
+            Shayad main hamesha apni feelings ko
+            perfect words mein express nahi kar pata,
+            lekin aaj main dil se kuch kehna chahta hoon.
+        </p>
+
+        <p>
+            Jab bhi tum smile karti ho,
+            pata nahi kyun mera din automatically better ho jata hai.
+        </p>
+
+        <p>
+            Tumhari baatein,
+            tumhari care,
+            aur tumhara hona hi mere liye bahut special hai.
+        </p>
+
+        <p>
+            Main bas itna chahta hoon ki
+            tum hamesha khush raho,
+            haste raho,
+            aur life mein jo bhi chaho
+            woh sab tumhe mile.
+        </p>
+
+        <p>
+            Tumhari har wish poori ho,
+            aur tumhari zindagi pyaar,
+            khushiyon aur success se bhari rahe.
+        </p>
+
+        <p>
+            Thank you itni amazing person hone ke liye.
+            Aur thank you meri life ka ek beautiful part banne ke liye.
+        </p>
+
+        <p class="special-line">
+            Tum bahut precious ho ❤️
+        </p>
+
+        <p>
+            Happy Birthday Ziya 🎂✨
+        </p>
+
+        <h3>
+            — Sahil ❤️
+        </h3>
+
+    </div>
+
+    <div class="bottom-buttons">
+
+        <a
+        href="gallery.html"
+        class="btn">
+        ⬅ Back
+        </a>
+
+        <button
+        class="btn"
+        onclick="goToReasons()">
+        Continue ➜ 🌹
+        </button>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+<script>
+
+function goToReasons(){
+
+localStorage.setItem(
+"reasonsUnlocked",
+"true"
+);
+
+document.body.classList.add(
+"fade-out"
+);
+
+setTimeout(()=>{
+
+window.location.href =
+"reasons.html";
+
+},800);
+
+}
+
+</script>
+
+</body>
+</html>
