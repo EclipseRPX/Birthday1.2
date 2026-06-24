@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Final Surprise 🎆</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+.final-container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px 20px;
+}
+
+.final-card{
+    max-width:900px;
+    width:100%;
+    text-align:center;
+    padding:40px 25px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.12);
+    backdrop-filter:blur(15px);
+    border-radius:30px;
+}
+
+.final-title{
+    font-size:4rem;
+    margin-bottom:20px;
+    animation:pulse 2s infinite;
+}
+
+.final-message{
+    line-height:2;
+    font-size:1.1rem;
+    color:#dcdcdc;
+}
+
+.big-quote{
+    margin-top:30px;
+    font-size:1.3rem;
+    font-weight:600;
+    color:#ffd166;
+}
+
+.signature{
+    margin-top:40px;
+    font-size:1.5rem;
+    font-weight:700;
+}
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.05);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+@media(max-width:768px){
+
+.final-title{
+font-size:2.5rem;
+}
+
+.final-message{
+font-size:1rem;
+}
+
+.big-quote{
+font-size:1.05rem;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="particles"></div>
+
+<audio id="bgMusic" loop>
+    <source src="music/birthday.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicBtn" class="music-btn">
+    🎵 Music
+</button>
+
+<div class="final-container">
+
+    <div class="final-card">
+
+        <h1 class="final-title">
+            🎂 Happy Birthday Sahil 🎂
+        </h1>
+
+        <p class="final-message">
+
+            This website wasn't made with expensive tools.
+
+            It wasn't made by a professional designer.
+
+            It was made with appreciation,
+            memories,
+            respect,
+            and friendship.
+
+            <br><br>
+
+            Thank you for being part of my life.
+
+            Thank you for every memory we've created together.
+
+            Thank you for being someone I can always trust.
+
+            <br><br>
+
+            I hope this birthday brings happiness,
+            success,
+            good health,
+            and endless opportunities into your life.
+
+        </p>
+
+        <div class="big-quote">
+
+            🤝 Brothers By Heart,
+            Friends By Choice,
+            Future Partners By Vision. 💼
+
+        </div>
+
+        <div class="big-quote">
+
+            🚀 From Playing Outside Our Homes
+            To Building Our Future Together.
+
+        </div>
+
+        <div class="signature">
+
+            ❤️ Forever Your Brother,
+            <br>
+            Badal
+
+        </div>
+
+        <div style="margin-top:40px;">
+
+            <button
+            onclick="launchConfetti()"
+            class="start-btn">
+            🎉 Celebrate Again
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+<script>
+
+/* Grand Finale */
+
+window.onload = () => {
+
+launchConfetti();
+
+startBirthdayShow();
+
+};
+
+</script>
+
+</body>
+</html>

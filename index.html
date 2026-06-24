@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Sahil 🎂</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Background Particles -->
+<div class="particles"></div>
+
+<!-- Music -->
+<audio id="bgMusic" loop>
+    <source src="music/birthday.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Music Button -->
+<button id="musicBtn" class="music-btn">
+    🎵 Play Music
+</button>
+
+<!-- Main Container -->
+<div class="hero">
+
+    <div class="glass-card">
+
+        <h3 class="welcome-text">
+            A Special Message For...
+        </h3>
+
+        <h1 class="main-title">
+            Sahil ❤️
+        </h1>
+
+        <div class="typing-container">
+            <span id="typing"></span>
+        </div>
+
+        <p class="hero-description">
+            10 Years Of Friendship,
+            Countless Memories,
+            One Brotherhood.
+        </p>
+
+        <div class="friendship-badge">
+            🤝 Best Friends Today • Business Partners Tomorrow
+        </div>
+
+        <a href="gallery.html" class="start-btn">
+            Begin The Journey →
+        </a>
+
+    </div>
+
+</div>
+
+<!-- Floating Shapes -->
+<div class="floating floating1"></div>
+<div class="floating floating2"></div>
+<div class="floating floating3"></div>
+
+<script src="script.js"></script>
+
+<script>
+
+const musicBtn = document.getElementById("musicBtn");
+const bgMusic = document.getElementById("bgMusic");
+
+musicBtn.addEventListener("click", () => {
+
+if(bgMusic.paused){
+bgMusic.play();
+musicBtn.innerHTML="⏸ Pause Music";
+}
+else{
+bgMusic.pause();
+musicBtn.innerHTML="🎵 Play Music";
+}
+
+});
+
+const text =
+"From childhood games outside our homes to dreams of building a successful future together... this website is dedicated to my brother, my best friend, Sahil.";
+
+let i = 0;
+
+function typeWriter(){
+
+if(i < text.length){
+
+document.getElementById("typing").innerHTML += text.charAt(i);
+
+i++;
+
+setTimeout(typeWriter,35);
+
+}
+
+}
+
+window.onload = typeWriter;
+
+</script>
+
+</body>
+</html>
